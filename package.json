@@ -1,0 +1,45 @@
+{
+  "name": "ej2-angular-listview-snippets",
+  "displayName": "ej2-angular-listview-snippets",
+  "description": "Essential JS 2 ListView component Angular snippets",
+  "version": "0.5.0",
+  "publisher": "thangasamykarthick",
+  "icon": "images/angular-logo.png",
+  "galleryBanner": {
+    "color": "#0273D4",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karthickthangasamy/vscode-ej2-listview-angular-snippets.git"
+  },
+  "keywords": [
+    "Angular",
+    "TypeScript",
+    "ej2",
+    "ej2-listview snippets",
+    "angular listview"
+  ],
+  "engines": {
+    "vscode": "^1.18.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-merge-json": "latest"
+  },
+  "scripts": {
+    "vscode:prepublish": "gulp merge"
+  }
+}

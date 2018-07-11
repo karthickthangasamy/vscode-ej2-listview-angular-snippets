@@ -1,0 +1,60 @@
+{
+    "EJ2 ListView Angular Module": {
+        "prefix": "ej2-listview-module",
+        "description": "Angular Grid Module",
+        "body": [
+            "import { NgModule } from '@angular/core';",
+            "import { BrowserModule  } from '@angular/platform-browser';",
+            "",
+            "import { ${1:App}Component } from './${2:app}.component';",
+            "import { ListViewModule } from '@syncfusion/ej2-ng-lists';",
+            "",
+            "@NgModule({",
+            "\timports: [",
+            "\t\tBrowserModule,",
+            "\t\tListViewModule,",
+            "\t],",
+            "\tdeclarations: [${1:App}Component],",
+            "\tbootstrap: [${1:App}Component],",
+            "})",
+            "export class ${3:App}Module { }",
+            "$0"
+        ]
+    },
+    "EJ2 ListView Angular Component": {
+        "prefix": "ej2-listview",
+        "description": "Angular ListView Component",
+        "body": [
+            "import { Component, OnInit } from '@angular/core';",
+            "",
+            "@Component({",
+            "\tselector: '${1:selector-name}',",
+            "\ttemplateUrl: '${2:name}.component.html'",
+            "})",
+            "",
+            "export class ${3:App}Component implements OnInit {",
+            "\t//Define an array of JSON data",
+            "\tpublic ${4:dataSource}:{ [key: string]: Object }[] = ${5:[]};$0",
+            "}"
+        ]
+    },
+    "EJ2 ListView Angular Component with Inline Template": {
+        "prefix": "ej2-listview-inline",
+        "description": "Angular ListView Component",
+        "body": [
+            "import { Component, OnInit } from '@angular/core';",
+            "",
+            "@Component({",
+            "\tselector: '${1:selector-name}',",
+            "\ttemplate: `<ejs-listview id='${2:listview}' [dataSource]='${3:dataSource}'>",
+            "\t</ejs-listview>`",
+            "})",
+            "",
+            "export class ${4:App}Component implements OnInit {",
+            "\t//Define an array of JSON data",
+            "\tpublic ${3:dataSource}:{ [key: string]: Object }[] = ${6:[]};",
+            "$0}"
+        ]
+    }
+
+}
